@@ -17,11 +17,11 @@ public class Film {
         this.title = title;
     }
 
-    public String getYear() {
-        return title;
+    public int getYear() {
+        return year;
     }
 
-    public void setYear(String title) {
-        this.title = title;
+    public void setYear(int year) {
+        this.year = year;
     }
 }

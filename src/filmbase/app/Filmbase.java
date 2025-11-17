@@ -25,10 +25,18 @@ public class Filmbase {
         alleFilm.add(new Film("Independence Day", 1996));
         alleFilm.add(new Film("Trading Places", 1983));
     }
+    private void printList(Collection<Film> films) {
+        for (Film f : films) {
+            System.out.println(f.getTitle() + ", " + f.getYear());
+        }
+    }
 
 
     public void start() {
         System.out.println("Filmbasen er startet");
         initAndAdd();
+        printList(alleFilm);
     }
-}
+
+    }
+
