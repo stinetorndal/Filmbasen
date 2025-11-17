@@ -1,6 +1,4 @@
-package filmbase.app;
-
-import filmbase.data.Film;
+package filmbase.data;
 
 import java.util.ArrayList;
 

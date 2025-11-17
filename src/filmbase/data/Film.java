@@ -3,10 +3,12 @@ package filmbase.data;
 public class Film {
     private String title;
     private int year;
+    private Genre genre;
 
-    public Film (String title, int year) {
+    public Film(String title, int year, Genre genre) {
         this.title = title;
         this.year = year;
+        this.genre = genre;
     }
 
     public String getTitle() {
@@ -23,5 +25,13 @@ public class Film {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
     }
 }
