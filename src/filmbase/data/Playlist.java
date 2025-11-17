@@ -10,7 +10,7 @@ public class Playlist {
     }
 
     //------afspiller og fjerner film fra liste------
-    //------prøv at fjerne getTitle, skal der så bruges toSting?------
+    //------prøv at fjerne getTitle, skal der så bruges toString?------
     public void playAndRemoveFilm(Film film) {
         System.out.println(film.getTitle() + " afspilles LIGE NU!");
         filmPlaylist.remove(film);
@@ -23,16 +23,24 @@ public class Playlist {
     public int numberOfFilms() {
         return filmPlaylist.size();
     }
+
     //------Lav en liste der f.eks. kan printes------
     public ArrayList<Film> getFilmPlaylist() {
         return filmPlaylist;
     }
+
     //------Tøm arrayliste-----
     public void clearPlaylist() {
         System.out.println("Sletter playliste nu ");
         filmPlaylist.clear();
 
     }
+
+    public void removeGenre(Genre genre) {
+        filmPlaylist.removeIf(film -> film.getGenre() == genre);
+    }
+
+
 
 }
 

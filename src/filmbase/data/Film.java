@@ -34,4 +34,12 @@ public class Film {
     public void setGenre(Genre genre) {
         this.genre = genre;
     }
-}
+
+    boolean hasGenre(Genre genre) {
+        return this.genre == genre;
+    }
+    @Override
+    public String toString(){
+        return title + " (" + year + ") : " + genre;
+    }
+    }
