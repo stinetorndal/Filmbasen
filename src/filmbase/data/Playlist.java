@@ -37,7 +37,7 @@ public class Playlist {
     }
 
     public void removeGenre(Genre genre) {
-        filmPlaylist.removeIf(film -> film.getGenre() == genre);
+        filmPlaylist.removeIf(film -> film.hasGenre(genre));
     }
 
 
